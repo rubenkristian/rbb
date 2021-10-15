@@ -1,0 +1,3 @@
+RewriteEngine On
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+RewriteRule ^(.*)$ public/$1 [L,QSA]
